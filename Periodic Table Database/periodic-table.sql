@@ -1,4 +1,3 @@
-
 --
 -- PostgreSQL database dump
 --
@@ -125,7 +124,6 @@ INSERT INTO public.elements VALUES (5, 'B', 'Boron');
 INSERT INTO public.elements VALUES (6, 'C', 'Carbon');
 INSERT INTO public.elements VALUES (7, 'N', 'Nitrogen');
 INSERT INTO public.elements VALUES (8, 'O', 'Oxygen');
-INSERT INTO public.elements VALUES (1000, 'Mt', 'moTanium');
 INSERT INTO public.elements VALUES (9, 'F', 'Fluorine');
 INSERT INTO public.elements VALUES (10, 'Ne', 'Neon');
 
@@ -142,7 +140,6 @@ INSERT INTO public.properties VALUES (8, 15.999, -218, -183, 4);
 INSERT INTO public.properties VALUES (3, 6.94, 180.54, 1342, 5);
 INSERT INTO public.properties VALUES (4, 9.0122, 1287, 2470, 5);
 INSERT INTO public.properties VALUES (5, 10.81, 2075, 4000, 6);
-INSERT INTO public.properties VALUES (1000, 1, 10, 100, 6);
 INSERT INTO public.properties VALUES (9, 18.998, -220, -188.1, 4);
 INSERT INTO public.properties VALUES (10, 20.18, -248.6, -246.1, 4);
 
@@ -177,6 +174,22 @@ ALTER TABLE ONLY public.elements
 
 ALTER TABLE ONLY public.elements
     ADD CONSTRAINT elements_pkey PRIMARY KEY (atomic_number);
+
+
+--
+-- Name: properties properties_atomic_number_key; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+--
+
+ALTER TABLE ONLY public.properties
+    ADD CONSTRAINT properties_atomic_number_key UNIQUE (atomic_number);
+
+
+--
+-- Name: properties properties_pkey; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+--
+
+ALTER TABLE ONLY public.properties
+    ADD CONSTRAINT properties_pkey PRIMARY KEY (atomic_number);
 
 
 --
