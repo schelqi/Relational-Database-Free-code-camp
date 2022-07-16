@@ -7,3 +7,7 @@ For this project, you will use Bash scripting, PostgreSQL, and Git to create a n
 
 # Salon Appointment Scheduler
 For this project, you will create an interactive Bash program that uses PostgreSQL to track the customers and appointments for your salon.
+
+# Bike Rental Shop
+build an interactive Bash program that stores rental information for your bike rental shop using PostgreSQL.
+
