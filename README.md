@@ -1,4 +1,6 @@
 # Relational Database Free Code Camp
+LINK: https://www.freecodecamp.org/learn/relational-database/
+
 # Periodic Table Database
 
 For this project, you will create Bash a script to get information about chemical elements from a periodic table database.
