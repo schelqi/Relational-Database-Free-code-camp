@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 PSQL="psql --username=freecodecamp --dbname=number_guess -t --no-align -c"
@@ -27,7 +26,7 @@ fi
 #GENERATE A RANDOM INTEGER BETWEEN 1 & 1000
 
 SECRET_NUMBER=$(( RANDOM%1000 + 0 ))
-echo "**SECRET NUMBER: $SECRET_NUMBER"
+#echo "**SECRET NUMBER: $SECRET_NUMBER"
 
 #START THE GAME
 
@@ -41,10 +40,10 @@ do
   if [[ ! $USER_INPUT =~ [0-9]+ ]]
   then
     echo "That is not an integer, guess again:"
-  elif ((USER_INPUT < SECRET_NUMBER))
+  elif (( USER_INPUT > SECRET_NUMBER ))
   then
     echo "It's lower than that, guess again:"
-  elif ((USER_INPUT > SECRET_NUMBER))
+  elif (( USER_INPUT < SECRET_NUMBER ))
   then
     echo "It's higher than that, guess again:"
   fi
