@@ -11,3 +11,5 @@ For this project, you will create an interactive Bash program that uses PostgreS
 # Bike Rental Shop
 build an interactive Bash program that stores rental information for your bike rental shop using PostgreSQL.
 
+# World Cup Database
+ For this project, you will create a Bash script that enters information from World Cup games into PostgreSQL, then query the database for useful statistics.
